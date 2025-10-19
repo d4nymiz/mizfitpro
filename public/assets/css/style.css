@@ -109,6 +109,8 @@ body {
 /* Tips Section */
 .tips {
   padding: 40px 20px;
+background-color: white;
+  margin-top: 20px;
 }
 
 .tips h2 {
