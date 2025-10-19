@@ -135,3 +135,49 @@ footer a {
   color: #ccc;
   text-decoration: underline;
 }
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.5rem 0;
+    color: white;
+    border-bottom: 1px solid #444;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
