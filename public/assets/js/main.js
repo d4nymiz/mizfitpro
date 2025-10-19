@@ -18,3 +18,7 @@ window.toggleTheme=()=>{document.documentElement.classList.toggle('light');local
    if(btn){ btn.addEventListener('click',()=>{ localStorage.setItem(KEY,'1'); const el=document.getElementById('affiliateDisclosure'); if(el){el.remove();} }); }
  }catch(e){}
 })();
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
