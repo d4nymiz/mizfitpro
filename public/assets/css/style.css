@@ -1,0 +1,34 @@
+
+:root{
+  --color-primary: #60c030;
+  --color-accent: #2090d0;
+  --bg-dark: #15250d;
+  --bg-surface: #0f180a;
+  --bg-light: #f8fafc;
+  --text-light: #e6f2e8;
+  --text-dark: #0b1220;
+  --muted: #9fb3a7;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.6;color:var(--text-light);background:var(--bg-dark)}
+.container{max-width:1120px;margin:auto;padding:0 1rem}
+.nav{position:sticky;top:0;background:rgba(21,37,13,.7);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:.75rem}
+.nav a{color:var(--text-light);margin:0 .5rem}
+.nav .cta{background:linear-gradient(135deg,var(--color-primary),var(--color-accent));padding:.5rem .9rem;border-radius:999px}
+.hero{padding:3rem 0;text-align:center;background:radial-gradient(circle at top,var(--color-primary)20%,transparent)}
+.hero h1{font-size:2.5rem;margin-bottom:.5rem}
+.btn{display:inline-block;padding:.8rem 1rem;border-radius:12px;border:1px solid rgba(255,255,255,.15)}
+.btn.primary{background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff}
+.grid{display:grid;gap:1rem}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--bg-surface);padding:1rem;border-radius:var(--radius)}
+footer{padding:2rem;text-align:center;color:#a9b8ad}
+.disclosure{position:fixed;left:1rem;right:1rem;bottom:1rem;background:rgba(0,0,0,.75);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(6px);color:#e6f2e8;padding:1rem;border-radius:12px;z-index:9999;display:none}
+.disclosure.show{display:block}
+.disclosure .row{display:flex;gap:.75rem;align-items:start;justify-content:space-between;flex-wrap:wrap}
+.disclosure button{border:none;border-radius:10px;padding:.6rem .9rem;cursor:pointer}
+.disclosure .ok{background:linear-gradient(135deg,var(--color-primary),var(--color-accent));color:#fff}
+.disclosure .more{background:transparent;border:1px solid rgba(255,255,255,.2);color:#e6f2e8}
